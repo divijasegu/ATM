@@ -1,0 +1,61 @@
+import java.util.Scanner;
+
+public class Bank{
+ 
+    public static void main(String[] args) {
+ 
+    	// - Asking user to Insert Card 
+    	 //- Validate check(Pin verification)
+    	 - //Displaying serveices and selecting service
+    	 //- Services -> Deposit, withdrawal, pin change, balance enquiry
+    	 float balance =5000.0;
+    	 System.out.ptintln("Enter the card");
+    	 System.out.println("Enter the pincode");
+    	 ATM pin = new ATM();
+    	 pin.isValidPinCode(String pinCode);
+    	 
+    	System.out.println(" Select the Displaying the services needed:"
+    			+ "\n1.Deposit,\n2.Withdrawal,\n3.pin change,\n4.balance enquiry");
+    	
+    	 Scanner sc = new Scanner(System.in);
+    	 int userChoice = sc.nextInt();
+    	 
+         if (userChoice == 1) {
+             System.out.println("Please Enter The Amount To Deposit ");
+             double depositAmount = sc.nextDouble();
+             userBalance += depositAmount;
+             System.out.println("You have successfully deposited " + depositAmount
+                     + " \nNow your balnce is " + userBalance);
+         } else if (userChoice == 2) {
+             System.out.println("Please Enter the Amount to Witdraw");
+             double withdrawAmount = bankScanner.nextDouble();
+             
+             if (withdrawAmount > userBalance) {
+                 System.out.println("Insufficient Balance. Please Try Again");
+             } else {
+                 userBalance -= withdrawAmount;
+                 System.out.println("You have successfully withdraw " + withdrawAmount
+                         + " \nNow your balnce is " + userBalance);
+             }
+         }
+         else if (userChoice == 3) {
+        	 System.out.printLn("enter the pin old pincode:");
+        	 int pin = sc.nextInt();
+        	 if (pin == ATM.isValidPinCode(StringPincode)) {
+        		 System.out.println("Enter the new pincode");
+        	     ATM.isValidPinCode(String pinCode);
+        		 
+        		 }
+        	 }
+         else(userChoice == 4){
+        	 System.out.println("Your balance is"+ balance);
+         }
+         
+          
+
+    		        
+    		        
+    		        
+  }
+  
+  
