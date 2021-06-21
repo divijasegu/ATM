@@ -1,0 +1,23 @@
+package ATM;
+
+import java.util.regex.*;
+
+public class ATM {
+	 int pinCode;
+	
+ 
+	public static boolean isValidPinCode(String pinCode) {
+    
+	String REGEX = "^[1-9]{1}[0-9]{3}$";
+	 Pattern p = Pattern.compile(REGEX);
+	 if(pincode == null) {
+		 return false;
+	 }
+	 Matcher m =p.matcher(pincode);
+	 return m.matches();
+	 
+	 
+	 
+	 
+}
+}
